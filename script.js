@@ -36,7 +36,7 @@ const students = [
   {name:"Silfana Afrilia Kustika S.", nickname:"30", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Sulistiyo Ramadhan", nickname:"31", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Sultan Nafis Danoearta", nickname:"32", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260823-WA0001.jpg"},
-  {name:"Surya Aditama", nickname:"33", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Surya Aditama", nickname:"33", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0047.jpg"},
   {name:"Syifana Olivia Rahma", nickname:"34", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Tinta Adzani Mecca", nickname:"35", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Zain Suryo Negoro", nickname:"36", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260429-WA0018.jpg"}
