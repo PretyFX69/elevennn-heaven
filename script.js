@@ -19,7 +19,7 @@ const students = [
   {name:"Fita Nova Azahro", nickname:"13", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0018(1).jpg"},
   {name:"Galih Mahija Aulia A.", nickname:"14", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Gigih Satria Bima", nickname:"15", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
-  {name:"Irma", nickname:"16", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Irma", nickname:"16", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0000.jpg"},
   {name:"Kainansyah Rizky G.", nickname:"17", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0036.jpg"},
   {name:"Keysha Zivanna Ramadhani", nickname:"18", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Khananya Adhenanta P.S.", nickname:"19", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
