@@ -30,7 +30,7 @@ const students = [
   {name:"Muhammad Surya Adam P.", nickname:"24", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0063.jpg"},
   {name:"Mutia Qurrota A'yuni", nickname:"25", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Nabilatun Nasyifa", nickname:"26", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
-  {name:"Nehan Aditya Pratama", nickname:"27", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Nehan Aditya Pratama", nickname:"27", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260826-WA0029.jpg"},
   {name:"Reghina Putri Faisal", nickname:"28", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Renata Ayushita", nickname:"29", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Silfana Afrilia Kustika S.", nickname:"30", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
