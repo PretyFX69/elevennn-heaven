@@ -26,7 +26,7 @@ button{font:inherit;color:inherit}
 .nav-links{display:flex;gap:25px;font-size:12px;color:#a7a9b8}.nav-links a{transition:.25s}.nav-links a:hover,.nav-links a.active{color:#fff}
 .menu-btn{display:none;background:none;border:0;width:36px}.menu-btn span{height:2px;background:white;display:block;margin:6px 0}
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;padding:120px 8% 70px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#070812 5%,rgba(7,8,18,.7) 50%,rgba(7,8,18,.25)),url("https://raw.githubusercontent.com/PretyFX69/music-files/refs/heads/main/motion_photo_3494632366123075611.jpg") center/cover;filter:saturate(.7)}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#070812 5%,rgba(7,8,18,.7) 50%,rgba(7,8,18,.25)),url("https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0231.jpg") center/cover;filter:saturate(.7)}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 30%,rgba(7,8,18,.2))}
 .hero-content,.hero-card{position:relative;z-index:2}.hero-content{max-width:760px}
 .eyebrow{font-size:10px;letter-spacing:.25em;color:var(--accent2);font-weight:700;margin-bottom:18px}
