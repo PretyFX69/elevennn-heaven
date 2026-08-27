@@ -6,7 +6,7 @@
 const students = [
   {name:"Ajeng Pratiwi Gunardi", nickname:"01", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0010.jpg"},
   {name:"Alfa Rizqi Aldi Alamsyah", nickname:"02", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
-  {name:"Alya Rikhodatul Aisyah", nickname:"03", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Alya Rikhodatul Aisyah", nickname:"03", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0239.jpg"},
   {name:"Aqil Mustaqim", nickname:"04", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0005.jpg"},
   {name:"Daffa Arif Bahtiar", nickname:"05", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0038.jpg"},
   {name:"Danish Andra Fardani", nickname:"06", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG_20260826_074400_130.jpg"},
@@ -29,7 +29,7 @@ const students = [
   {name:"Muhammad Jundi Adhila H.", nickname:"23", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0007.jpg"},
   {name:"Muhammad Surya Adam P.", nickname:"24", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0063.jpg"},
   {name:"Mutia Qurrota A'yuni", nickname:"25", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
-  {name:"Nabilatun Nasyifa", nickname:"26", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Nabilatun Nasyifa", nickname:"26", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0240.jpg"},
   {name:"Nehan Aditya Pratama", nickname:"27", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260826-WA0029.jpg"},
   {name:"Reghina Putri Faisal", nickname:"28", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
   {name:"Renata Ayushita", nickname:"29", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0237.jpg"},
@@ -42,10 +42,10 @@ const students = [
   {name:"Zain Suryo Negoro", nickname:"36", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260429-WA0018.jpg"}
 ];
 const memories = [
-  {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0019.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0013.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0016.jpg"], title:"First photo while exercising", category:"Class", date:"Date 05/08/2026"},
+  {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0019.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0013.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0016.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0244.jpg"], title:"First photo while exercising", category:"Class", date:"Date 05/08/2026"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0020.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0019.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0018.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0015.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0009.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0012.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0013.jpg"], title:"On the day pilketos", category:"Class", date:"Date 11/08/2026"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0028.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0031.jpg"], title:"Adam sama temennya jalan² ke mall", category:"Random", date:"Date 10/08/2026"},
-  {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260809-WA0001.jpg"], title:"Sulthan dapet 2 hadiah", category:"Random", date:"Date 09/08/2026"},
+  {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260809-WA0001(1)_1.jpg"], title:"Sulthan dapet 2 hadiah", category:"Random", date:"Date 09/08/2026"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0025.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0029.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0021.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0027.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_7680641683682074626.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0023.jpg"], title:"After finishing the cooking competition", category:"Class", date:"Date 26/08/2026"},
   {
   images: [
@@ -65,6 +65,43 @@ const memories = [
   category: "Class",
   date: "Date 26/08/2026"
 },
+  {
+  images: [
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0066_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0074_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0080_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0084_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0088_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0090_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0100_1.jpg",
+    
+"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0110_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0122_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0128_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_1402388607912010367_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_1818828516034740060_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_2301575881646681366_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_2823491321285006498_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_3372758210259555252_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_3412780677660576880_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_3550180192406555800_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_4307954294327903719_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_4423340867785567139_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_4722860445353100356_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_507447367820053882_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_5115645395401222637_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_5421410426508185181_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_5436489153588798747_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_5710807116675254850_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_6234155292006627452_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_7215995656066364528_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_7435798809304791970_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_8161471425074690246_1.jpg"
+  ],
+  title: "girls after finishing the makeup competition",
+  category: "Class",
+  date: "Date 26/08/2026"
+},
     {
   images: [
     "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0023_1.jpg",
@@ -76,7 +113,8 @@ const memories = [
     "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0007_1.jpg",
     "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0005_1.jpg",
     "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0003_1.jpg",
-    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0001_1.jpg"
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0001_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0231_1.jpg"
   ],
   title: "Finish the Padus Competition",
   category: "Class",
