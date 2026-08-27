@@ -47,6 +47,23 @@ const memories = [
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0028.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0031.jpg"], title:"Adam sama temennya jalan² ke mall", category:"Random", date:"Somewhere together"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260809-WA0001.jpg"], title:"Sulthan dapet 2 hadiah", category:"Random", date:"Ordinary day, extraordinary memory"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0025.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0029.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0021.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0027.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/motion_photo_7680641683682074626.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260824-WA0023.jpg"], title:"Lomba Masak Agustusan", category:"Class", date:"Ordinary day, extraordinary memory"},
+    {
+  images: [
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0023_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0021_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0019_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0017_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0015_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0011_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0007_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0005_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0003_1.jpg",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0001_1.jpg"
+  ],
+  title: "Finish the Padus Competition",
+  category: "Class",
+  date: "Ordinary day, extraordinary memory"
+}
   
 ];
 
