@@ -237,6 +237,21 @@ function renderTimeline(){
   `).join("");
 }
 
+/* ===== BACK HP/GESTUR NUTUP MODAL DULU, BUKAN LANGSUNG KELUAR WEB =====
+   Tiap kali modal dibuka, kita "titip" satu state history baru.
+   Begitu tombol/gestur back dipencet, browser akan trigger event
+   popstate dulu sebelum benar-benar keluar dari halaman — nah di situ
+   kita tangkap lalu tutup modal saja. Kalau modal ditutup manual
+   (klik X/backdrop/Escape), state titipan itu juga langsung dibuang
+   (history.back() dipanggil sendiri) supaya back berikutnya balik ke
+   perilaku normal (keluar app), bukan numpuk history kosong. */
+let modalHistoryActive = false;
+function pushModalHistory(){
+  if(modalHistoryActive) return;
+  modalHistoryActive = true;
+  history.pushState({modalOpen:true}, "", location.href);
+}
+
 function openStudent(i){
   const s=students[i];
   const modalPhoto=$("#modalPhoto");
@@ -246,6 +261,7 @@ function openStudent(i){
   $("#modalNick").textContent=s.nickname;
   $("#studentModal").classList.add("open");
   document.body.style.overflow="hidden";
+  pushModalHistory();
 }
 
 let currentMemory = null, currentSlide = 0;
@@ -278,13 +294,27 @@ function openMemory(i){
   renderMemorySlide();
   $("#memoryModal").classList.add("open");
   document.body.style.overflow="hidden";
+  pushModalHistory();
 }
 
 function closeModals(){
   $$(".modal").forEach(m=>m.classList.remove("open"));
   document.body.style.overflow="";
+  if(modalHistoryActive){
+    modalHistoryActive = false;
+    history.back(); // buang state titipan biar back selanjutnya normal
+  }
 }
 $$(".close-modal,.close-memory,.modal-backdrop").forEach(el=>el.addEventListener("click",closeModals));
+
+/* Back HP/gestur ditekan pas modal kebuka -> ini yang jalan duluan */
+window.addEventListener("popstate", ()=>{
+  if($$(".modal.open").length){
+    modalHistoryActive = false; // state udah "dipakai" browser, gak perlu history.back() lagi
+    $$(".modal").forEach(m=>m.classList.remove("open"));
+    document.body.style.overflow="";
+  }
+});
 
 /* ===== NAVIGASI SLIDE FOTO MEMORY ===== */
 $("#slidePrev").addEventListener("click", e=>{ e.stopPropagation(); goSlide(-1); });
