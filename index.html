@@ -1,220 +1,182 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080914">
-  <title>ELEVEN HEAVEN — XI-H</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebView</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: white;
+        }
+
+        #website {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        #loading {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+        }
+
+        #error {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: white;
+            text-align: center;
+            z-index: 20;
+        }
+
+        #error h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        #error p {
+            color: #666;
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- INTRO SCREEN (TOMBOL MASUK) -->
-  <div id="welcomeScreen" class="welcome-screen">
-    <div class="welcome-content">
-      <p class="eyebrow">WELCOME TO OUR STORY</p>
-      <h1>ELEVEN HEAVEN</h1>
-      <p style="color: #a1a4b2; font-size: 14px; margin-bottom: 30px;">Siap untuk membuka kembali kenangan kelas kita?</p>
-      <button id="enterBtn" class="btn primary">View Memories ✨</button>
-    </div>
-  </div>
+<div id="loading">
+    Memuat website...
+</div>
 
-  <div id="loader">
-    <div class="loader-ring"></div>
-    <div class="loader-title">ELEVEN HEAVEN</div>
-    <div class="loader-sub">XI-H • LOADING MEMORIES...</div>
-  </div>
+<div id="error">
+    <h1>403</h1>
+    <p>Website tidak dapat ditampilkan.</p>
+</div>
 
-  <div class="progress"></div>
-  <div class="stars"></div>
-  <div class="cursor-glow"></div>
+<iframe
+    id="website"
+    style="display:none;"
+    sandbox="allow-scripts allow-forms allow-same-origin allow-popups">
+</iframe>
 
-  <nav class="navbar">
-    <a class="brand" href="#home"><span>XI</span> HEAVEN</a>
-    <button class="menu-btn" aria-label="Buka menu"><span></span><span></span><span></span></button>
-    <div class="nav-links">
-      <a href="#home" class="active">Beranda</a>
-      <a href="#students">Siswa</a>
-      <a href="#memories">Memories</a>
-      <a href="#timeline">Journey</a>
-      <a href="#contact">About</a>
-    </div>
-  </nav>
+<script>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-orb orb-a"></div>
-      <div class="hero-orb orb-b"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">DIGITAL CLASS YEARBOOK • 2026</p>
-        <h1>ELEVEN<br><span>HEAVEN</span></h1>
-        <p class="hero-text">Satu kelas. Banyak karakter. Ribuan cerita yang tidak akan terulang dengan cara yang sama.</p>
-        <div class="hero-actions">
-          <a href="#memories" class="btn primary">Explore Memories <b>↓</b></a>
-          <button class="btn ghost" id="randomMemory">✨ Random Memory</button>
-        </div>
-        <div class="scroll-hint"><span></span> Scroll untuk masuk ke cerita kami</div>
-      </div>
-      <div class="hero-card reveal">
-        <div class="mini-label">XI-H</div>
-        <div class="mini-title">Our Story</div>
-        <div class="mini-line"></div>
-        <p>“Different people,<br>one unforgettable story.”</p>
-      </div>
-    </section>
+const SUPABASE_URL =
+    "https://zadfmipevufwxbzhqqxz.supabase.co";
 
-    <section class="intro section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">WELCOME TO OUR WORLD</p>
-        <h2>Bukan cuma <em>kelas.</em></h2>
-      </div>
-      <div class="intro-grid">
-        <p class="big-copy reveal">𝑲𝒂𝒎𝒊 𝒂𝒅𝒂𝒍𝒂𝒉 𝒔𝒆𝒌𝒖𝒎𝒑𝒖𝒍𝒂𝒏 𝒐𝒓𝒂𝒏𝒈 𝒅𝒆𝒏𝒈𝒂𝒏 𝒄𝒆𝒓𝒊𝒕𝒂 𝒚𝒂𝒏𝒈 𝒃𝒆𝒓𝒃𝒆𝒅𝒂, 𝒅𝒊𝒑𝒆𝒓𝒕𝒆𝒎𝒖𝒌𝒂𝒏 𝒅𝒊 𝒔𝒂𝒕𝒖 𝒓𝒖𝒂𝒏𝒈𝒂𝒏 𝒅𝒂𝒏 𝒅𝒊𝒃𝒆𝒓𝒊 𝒏𝒂𝒎𝒂 <strong>XI-H</strong>.</p>
-        <p class="muted reveal">Website ini dibuat sebagai tempat menyimpan wajah, momen, tawa, tugas, perjalanan, dan semua hal kecil yang suatu hari nanti mungkin akan sangat dirindukan.</p>
-      </div>
-      <div class="stats reveal">
-        <div><strong id="studentCount">0</strong><span>Students</span></div>
-        <div><strong>∞</strong><span>Memories</span></div>
-        <div><strong>1</strong><span>Story</span></div>
-      </div>
-    </section>
+const FUNCTION_NAME =
+    "smooth-handler";
 
-    <!-- SECTION INSTAGRAM KELAS -->
-    <section id="class-ig" class="section ig-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">OFFICIAL SOCIAL MEDIA</p>
-        <h2>Instagram <em>Class</em></h2>
-      </div>
 
-      <div class="class-ig-card reveal">
-        <img src="https://wsrv.nl/?url=raw.githubusercontent.com%2FPretyFX69%2Fmusic-files%2Frefs%2Fheads%2Fmain%2F1787232279311.png&w=160&q=75&output=webp&we&n=-1" alt="Profile IG Kelas" class="class-ig-avatar" loading="lazy" decoding="async">
-        <div class="class-ig-info">
-          <span class="class-ig-handle">@elevennn.heaven</span>
-          <h3 class="class-ig-name">XI-H</h3>
-          <p class="class-ig-bio">𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒉𝒆𝒂𝒗𝒆𝒏 𝒄𝒍𝒂𝒔𝒔<br>— 𝓟𝓪𝓻𝓽 𝓸𝓯 : 🏫 @sman1brebes<br>— 📚 𝕤𝕔𝕙𝕠𝕠𝕝 𝕪𝕖𝕒𝕣 𝟚𝟘𝟚𝟞/𝟚𝟘𝟚𝟟<br>— 👩‍🏫 𝗗𝗲𝘄𝗶 𝗪𝗮𝗸𝗵𝘆𝘂 𝗪𝘂𝗹𝗮𝗻𝗱𝗮𝗿𝗶, 𝗦.𝗸𝗼𝗺<br>— 𝟹𝟼 𝚜𝚝𝚞𝚍𝚎𝚗𝚝 🤝 𝟏𝟒 𝓰𝓲𝓻𝓵𝓼 & 𝟐𝟐 𝓫𝓸𝔂𝓼</p>
-          <a href="https://instagram.com/elevennn.heaven" target="_blank" class="btn primary class-ig-btn">Kunjungi Instagram Kelas ↗</a>
-        </div>
-      </div>
-    </section>
+async function loadWebsite() {
+  
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
 
-    <!-- SECTION DAFTAR SISWA -->
-    <section id="students" class="section students-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">MEET THE PEOPLE</p>
-        <h2>Our <em>Students</em></h2>
-      </div>
+    const id =
+        params.get("id");
 
-      <div class="student-grid" id="studentGrid"></div>
-    </section>
 
-    <section id="memories" class="section memories-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">THE MOMENTS WE KEEP</p>
-        <h2>Memory <em>Gallery</em></h2>
-      </div>
-      <div class="filters" id="galleryFilters"></div>
-      <div class="gallery" id="gallery"></div>
-    </section>
+    if (!id) {
 
-    <section id="timeline" class="section journey-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">FROM THEN TO NOW</p>
-        <h2>Our <em>Journey</em></h2>
-      </div>
-      <div class="timeline" id="timelineList"></div>
-    </section>
+        showError();
 
-    <section class="quote-section section">
-      <div class="quote-bg"></div>
-      <div class="quote-inner reveal">
-        <span class="quote-mark">“</span>
-        <h2>Some memories<br>never need a <em>replay.</em></h2>
-        <p>Karena sekali pernah terjadi, mereka akan selalu punya tempat di cerita kita.</p>
-      </div>
-    </section>
+        return;
+    }
 
-    <section id="contact" class="section ending-section">
-      <div class="ending-card reveal">
-        <p class="eyebrow">THE END IS ONLY A NEW BEGINNING</p>
-        <h2>Wherever we go,<br><em>remember XI-H.</em></h2>
-        <p class="ending-text">Simpan halaman ini. Tambahkan foto baru. Isi cerita baru. Biar website ini tumbuh bersama kelas kita.</p>
-        <button class="btn primary" id="topBtn">Back to Top ↑</button>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <div>
-      <strong>ELEVEN HEAVEN</strong>
-      <span>XI-H • Digital Class Yearbook</span>
-    </div>
-    <div class="creator">Moddedby <b>Zain Suryo Negoro</b></div>
-    <div>© 2026 • Made with memories.</div>
-  </footer>
+    try {
 
-  <div class="modal" id="studentModal">
-    <div class="modal-backdrop"></div>
-    <div class="modal-box">
-      <button class="close-modal">×</button>
-      <img id="modalPhoto" src="" alt="">
-      <div class="modal-info">
-        <p class="eyebrow">XI-H STUDENT</p>
-        <h2 id="modalName"></h2>
-        <p id="modalNick" class="modal-nick"></p>
-      </div>
-    </div>
-  </div>
+        const response =
+            await fetch(
+                `${SUPABASE_URL}/functions/v1/${FUNCTION_NAME}?id=${encodeURIComponent(id)}`
+            );
 
-  <div class="modal" id="memoryModal">
-    <div class="modal-backdrop"></div>
-    <div class="memory-view">
-      <!-- TOMBOL CLOSE SUDAH DIHAPUS DARI SINI -->
-      <div class="memory-slider" id="memorySlider">
-        <button class="slide-nav prev" id="slidePrev" aria-label="Foto sebelumnya">‹</button>
-        <img id="memoryImage" src="" alt="">
-        <button class="slide-nav next" id="slideNext" aria-label="Foto berikutnya">›</button>
-      </div>
-      <div class="slide-dots" id="slideDots"></div>
-      <div class="memory-caption">
-        <span id="memoryCategory"></span>
-        <h2 id="memoryTitle"></h2>
-        <p id="memoryDate"></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="toast" id="toast"></div>
+        if (!response.ok) {
 
-  <!-- MUSIC PLAYER OVERLAY -->
-  <div class="music-widget" id="musicWidget">
-    <button class="music-orb" id="musicOrb" aria-label="Buka/tutup player musik">
-      <img src="https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/WA_1787811604311.jpeg" alt="Cover" class="music-cover">
-      <svg class="music-orb-ring" viewBox="0 0 36 36">
-        <circle class="ring-bg" cx="18" cy="18" r="16"></circle>
-        <circle class="ring-progress" id="ringProgress" cx="18" cy="18" r="16"></circle>
-      </svg>
-    </button>
-    <div class="music-panel" id="musicPanel">
-      <div class="music-info">
-        <span class="music-title" id="musicTitle">Shape of My Heart</span>
-        <span class="music-artist" id="musicArtist">Backstreet Boy</span>
-      </div>
-      <div class="music-controls">
-        <button class="music-toggle" id="musicToggle" aria-label="Play/Pause lagu">▶</button>
-        <div class="music-seek">
-          <div class="music-bar" id="musicBar"><div class="music-bar-fill" id="musicBarFill"></div></div>
-          <div class="music-times"><span id="musicCurrent">0:00</span><span id="musicDuration">0:00</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <audio id="bgAudio" src="https://github.com/PretyFX69/kenangan-XI-H/raw/refs/heads/main/Shape%20of%20My%20Heart-1.mp3" preload="none" loop></audio>
+            showError();
 
-  <script src="script.js"></script>
+            return;
+        }
+
+
+        const html =
+            await response.text();
+
+
+        const iframe =
+            document.getElementById("website");
+
+
+        iframe.srcdoc = html;
+
+
+        iframe.style.display =
+            "block";
+
+
+        document.getElementById(
+            "loading"
+        ).style.display = "none";
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        showError();
+
+    }
+
+}
+
+
+function showError() {
+
+    document.getElementById(
+        "loading"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "website"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "error"
+    ).style.display = "flex";
+
+}
+
+
+loadWebsite();
+
+</script>
+
 </body>
 </html>
