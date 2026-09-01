@@ -5,7 +5,7 @@
 
 const students = [
   {name:"Ajeng Pratiwi Gunardi", nickname:"01", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0010.jpg"},
-  {name:"Alfa Rizqi Aldi Alamsyah", nickname:"02", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/8ae9e92fa4e69967aa61bf2bda967b7b.jpg"},
+  {name:"Alfa Rizqi Aldi Alamsyah", nickname:"02", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260830-WA0067.jpg"},
   {name:"Alya Rikhodatul Aisyah", nickname:"03", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0239.jpg"},
   {name:"Aqil Mustaqim", nickname:"04", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0005.jpg"},
   {name:"Daffa Arif Bahtiar", nickname:"05", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260825-WA0038.jpg"},
@@ -42,6 +42,18 @@ const students = [
   {name:"Zain Suryo Negoro", nickname:"36", photo:"https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260429-WA0018.jpg"}
 ];
 const memories = [
+  
+  {
+  images: [
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/1_495eb1aa-0dc8-4cad-a024-d756bf9e34a5.png",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/1_b45f1476-fef1-4794-984b-fbcdb6f0d653.png",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/1_97c3738e-eb25-4e6f-b32a-6f2163b1169a.png"
+    
+  ],
+  title: "Photos of the women",
+  category: "Class",
+  date: "Date 29/07/2026"
+},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0019.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0013.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260805-WA0016.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260827-WA0244.jpg"], title:"First photo while exercising", category:"Class", date:"Date 05/08/2026"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0020.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0019.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0018.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0015.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0009.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0012.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260811-WA0013.jpg"], title:"On the day pilketos", category:"Class", date:"Date 11/08/2026"},
   {images:["https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0028.jpg","https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/IMG-20260820-WA0031.jpg"], title:"Adam sama temennya jalan² ke mall", category:"Random", date:"Date 10/08/2026"},
@@ -150,7 +162,17 @@ const memories = [
   title: "Portrait of a Girl After Padus",
   category: "Class",
   date: "Date 27/08/2026"
-},  
+},
+  {
+  images: [
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/file_0000000092388207a2822c2f8a415049.png",
+    "https://raw.githubusercontent.com/PretyFX69/kenangan-XI-H/refs/heads/main/file_000000003910821192ab3b7773f7c6d0.png"
+    
+  ],
+  title: "Mainan Poker",
+  category: "Random",
+  date: "Date 31/08/2026"
+},
 ];
 
 const timeline = [
